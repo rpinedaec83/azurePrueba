@@ -4,6 +4,8 @@ require("dotenv").config();
 
 const app = express();
 
+const port = process.env.PORT || 3000
+
 // Middlewares here 
 app.set('view engine', 'ejs');
 app.use(express.json());
@@ -32,6 +34,6 @@ app.get("/cancel",(req,res)=>{
 })
 
 // Listen 
-app.listen(8000, () => {
-    console.log("Server started at port 8080 desde la consola");
+app.listen(port, () => {
+    console.log(`Server started at ${port}  desde la consola`);
 }); 
