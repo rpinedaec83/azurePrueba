@@ -37,3 +37,5 @@ app.get("/cancel",(req,res)=>{
 app.listen(port, () => {
     console.log(`Server started at ${port}  desde la consola`);
 }); 
+
+module.exports = app
